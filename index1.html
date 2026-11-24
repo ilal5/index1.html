@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Pribadi</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .hero {
+            background: #f0f5ff;
+            padding: 80px 20px;
+        }
+
+        .profile-img {
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .skill-card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-8px);
+        }
+
+        footer {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">My Profile</a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Tentang Saya</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skill">Keahlian</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <section id="home" class="hero text-center">
+        <div class="container">
+            <img src="foto.jpg" class="profile-img mb-3" alt="Foto Profil">
+
+            <h1 class="fw-bold">Halo, Saya Nama Kamu!</h1>
+            <h4>Mahasiswa | Web Developer</h4>
+
+            <p class="mt-3">
+                Selamat datang di halaman profil pribadi saya.
+            </p>
+
+            <a href="#about" class="btn btn-primary mt-2">
+                Tentang Saya
+            </a>
+        </div>
+    </section>
+
+    <!-- Tentang Saya -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-4">Tentang Saya</h2>
+
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h3>Perkenalkan!</h3>
+                    <p>
+                        Nama saya Nama Kamu. Saya adalah seorang mahasiswa
+                        yang memiliki ketertarikan dalam bidang teknologi
+                        informasi dan pengembangan website.
+                    </p>
+                    <p>
+                        Saya senang belajar hal baru, mengembangkan
+                        kemampuan, dan mencoba berbagai teknologi.
+                    </p>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card shadow border-0 p-4">
+                        <h5>Informasi Pribadi</h5>
+                        <p><b>Nama:</b> Nama Kamu</p>
+                        <p><b>Tempat Tinggal:</b> Kota Kamu</p>
+                        <p><b>Pendidikan:</b> Mahasiswa</p>
+                        <p><b>Hobi:</b> Membaca, Coding, Musik</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keahlian -->
+    <section id="skill" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-4">Keahlian Saya</h2>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card skill-card text-center p-4">
+                        <h4>HTML</h4>
+                        <p>Membuat struktur halaman website.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card skill-card text-center p-4">
+                        <h4>CSS</h4>
+                        <p>Mendesain tampilan website.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card skill-card text-center p-4">
+                        <h4>Bootstrap</h4>
+                        <p>Membuat website responsif.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="contact" class="py-5">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4">Hubungi Saya</h2>
+
+            <p>Email: namakamu@gmail.com</p>
+            <p>Instagram: @usernamekamu</p>
+
+            <a href="mailto:namakamu@gmail.com" class="btn btn-primary">
+                Kirim Email
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white text-center p-3">
+        <p class="mb-0">
+            &copy; 2026 Nama Kamu. All Rights Reserved.
+        </p>
+    </footer>
+
+    <!-- JavaScript Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript Tambahan -->
+    <script>
+        // Menampilkan pesan saat halaman dibuka
+        console.log("Website Profil Berhasil Dibuka!");
+
+        // Pesan sapaan
+        window.addEventListener("load", function() {
+            console.log("Selamat datang di halaman profil saya!");
+        });
+    </script>
+
+</body>
+</html>
